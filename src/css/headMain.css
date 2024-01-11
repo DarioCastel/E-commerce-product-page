@@ -1,0 +1,44 @@
+.headContainer{
+    display: flex;
+    align-items: center;
+}
+.headElementsLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 7rem;
+    width: 50%;
+    height: 16vh;
+    background-color: red;
+    gap: 5rem;
+}
+
+.headElementsRight{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0rem 7rem;
+    width: 50%;
+    height: 16vh;
+    background-color: blue;
+}
+
+
+.headButtons{
+    display: flex;
+    cursor: pointer;
+    gap: 2rem;
+}
+
+.headAvatar{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 3rem;
+width: 3rem;
+}
+
+.headAvatar img{
+    width: 100%;
+    height: 100%;
+}
