@@ -1,11 +1,13 @@
 import "../css/bodyMain.css";
+import Galery from "./Galery";
+import ProductInfo from "./ProductInfo";
 
 const BodyMain = () => {
   return (
     <>
     <div className="bodyContainer">
-      <div className="productImgContainer">imagene</div>
-      <div className="productInfoContainer">info coso</div>
+      <Galery/>
+      <ProductInfo/>
     </div>
     </>
   );
