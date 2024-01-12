@@ -1,0 +1,79 @@
+.galeryContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: brown;
+    width: 50vw;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.previewMain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 19rem;
+    height: 19rem;
+    
+}
+
+.previewMain img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.smallPreviewContainer{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.previewPhoto1{
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+}
+
+.previewPhoto1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.previewPhoto2{
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+}
+
+.previewPhoto2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.previewPhoto3{
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+}
+
+.previewPhoto3 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.previewPhoto4{
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+}
+
+.previewPhoto4 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
