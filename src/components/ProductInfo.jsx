@@ -1,5 +1,7 @@
 import "../css/productInfo.css";
 
+
+
 const ProductInfo = () => {
   return (
     <>
