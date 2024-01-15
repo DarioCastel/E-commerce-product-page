@@ -1,7 +1,6 @@
 .galeryContainer{
     display: flex;
     flex-direction: column;
-    background-color: brown;
     width: 50vw;
     gap: 2rem;
     align-items: center;
