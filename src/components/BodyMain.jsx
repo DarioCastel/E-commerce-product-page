@@ -12,7 +12,7 @@ import Product4thumb from "../img/image-product-4-thumbnail.jpg"
 
 const BodyMain = () => {
 
-  const data=[
+  const data=
     {
       galeryPhoto:[
         {
@@ -36,19 +36,19 @@ const BodyMain = () => {
           imgThumb:`${Product4thumb}`
         }
       ],
-      companyName:"",
-      productName:"",
-      description:"",
+      companyName:"SNEAKER COMPANY",
+      productName:"Fall Limited Edition Sneakers",
+      description:"These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, theyll withstand everything the weather can offer.",
       price:250,
-      discount:0.5,
+      discount:0.31,
       cant:0
     }
-  ]
+  
   return (
     <>
     <div className="bodyContainer">
       <Galery/>
-      <ProductInfo/>
+      <ProductInfo companyName={data.companyName} productName={data.productName} description={data.description} priceList={data.price} discount={data.discount}/>
     </div>
     </>
   );

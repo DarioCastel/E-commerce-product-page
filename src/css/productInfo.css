@@ -70,6 +70,7 @@ h1{
     align-items: center;
     background-color: var(--Light-grayish-blue);
     border-radius: 10px;
+    width: 8rem;
 }
 
 .minusButton{
@@ -83,6 +84,7 @@ h1{
     color: var(--Orange);
     font-weight: bolder;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .quantityProduct{
@@ -103,6 +105,7 @@ h1{
     color: var(--Orange);
     font-weight: bolder;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .addButton{

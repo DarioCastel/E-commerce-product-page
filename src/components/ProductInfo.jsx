@@ -1,32 +1,45 @@
+import { useState } from "react";
 import "../css/productInfo.css";
+import Minus from "../img/icon-minus.svg"
+import Plus from "../img/icon-plus.svg"
 
+const ProductInfo = ({companyName, productName, description, priceList, discount}) => {
+  const [cont, setCont] = useState(0)
 
+  const handlerMinus = ()=>{
+    if(cont==0){
+      cont
+    }
+    else{
+      setCont(cont-1)
+    }
+  }
 
-const ProductInfo = () => {
+  const handlerPlus=()=>{
+    setCont(cont+1)
+  }
+
   return (
+    
     <>
       <div className="productInfoContainer">
-        <span className="titleCompany">SNEAKER COMPANY</span>
-        <h1>Fall Limited Edition Sneakers</h1>
+        <span className="titleCompany">{companyName}</span>
+        <h1>{productName}</h1>
         <span className="descriptionProduct">
-          <p>
-            These low-profile sneakers are your perfect casual wear companion.
-            Featuring a durable rubber outer sole, theyll withstand everything
-            the weather can offer.
-          </p>
+          {description}
         </span>
         <div className="priceContainer">
           <div className="priceCalculated">
-            <span className="actualPrice">$125.00</span>
-            <span className="discountPrice">%50</span>
+            <span className="actualPrice">{"$"}{(priceList-priceList*discount).toFixed(2)}</span>
+            <span className="discountPrice">{discount*100}{"%"}</span>
           </div>
-          <span className="priceList">$250.00</span>
+          <span className="priceList">{(priceList).toFixed(2)}</span>
         </div>
         <div className="cantCartContainer">
           <div className="itemUnits">
-            <button className="minusButton">-</button>
-            <span className="quantityProduct">2</span>
-            <button className="plusButton">+</button>
+            <button className="minusButton" onClick={handlerMinus}><img src={Minus} alt="" /></button>
+            <span className="quantityProduct">{cont}</span>
+            <button className="plusButton" onClick={handlerPlus}><img src={Plus} alt="" /></button>
           </div>
           <button className="addButton">Add to cart</button>
         </div>
