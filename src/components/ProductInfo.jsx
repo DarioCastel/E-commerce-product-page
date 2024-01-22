@@ -2,10 +2,12 @@ import { useState } from "react";
 import "../css/productInfo.css";
 import Minus from "../img/icon-minus.svg"
 import Plus from "../img/icon-plus.svg"
+import { useCart } from "../hooks/useCart";
 
 const ProductInfo = ({companyName, productName, description, priceList, discount}) => {
   const [cont, setCont] = useState(0)
 
+  const {addToCart}=useCart()
   const handlerMinus = ()=>{
     if(cont==0){
       cont
@@ -41,7 +43,11 @@ const ProductInfo = ({companyName, productName, description, priceList, discount
             <span className="quantityProduct">{cont}</span>
             <button className="plusButton" onClick={handlerPlus}><img src={Plus} alt="" /></button>
           </div>
-          <button className="addButton">Add to cart</button>
+          <button className="addButton" onClick={
+            ()=>{
+              addToCart()
+            }
+          }>Add to cart</button>
         </div>
       </div>
     </>
