@@ -29,16 +29,16 @@ const Galery = () => {
           <img src={photoMain} alt="" onClick={()=>{handlerImgClick()}}/>
         </div>
         <div className="smallPreviewContainer">
-          <span className="previewPhoto1">
+          <span className={`previewPhoto1 ${photoMain===Product1 ? 'active' : ''}`}>
             <img src={Thumb1} alt="" onClick={()=>{setPhotoMain(Product1)}}/>
           </span>
-          <span className="previewPhoto2">
+          <span className={`previewPhoto2 ${photoMain===Product2  ? 'active' : ''}`}>
           <img src={Thumb2} alt="" onClick={()=>{setPhotoMain(Product2)}}/>
           </span>
-          <span className="previewPhoto3">
+          <span className={`previewPhoto3 ${photoMain===Product3  ? 'active' : ''}`}>
           <img src={Thumb3} alt="" onClick={()=>{setPhotoMain(Product3)}}/>
           </span>
-          <span className="previewPhoto4">
+          <span className={`previewPhoto4 ${photoMain===Product4  ? 'active' : ''}`}>
           <img src={Thumb4} alt="" onClick={()=>{setPhotoMain(Product4)}}/>
           </span>
         </div>

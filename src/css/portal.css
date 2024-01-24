@@ -23,11 +23,44 @@
 
 .galeryContainerPortal{
     display: flex;
-    flex-direction: column;
     width: 80vw;
     gap: 2rem;
     align-items: center;
     justify-content: center;
+}
+
+.prevBtn{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    right: -3rem;
+    top: -2rem;
+}
+.prevBtn img:hover{
+    color: var(--Orange);
+}
+
+.nextBtn{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    left: -3rem;
+    top: -2rem;
+}
+
+
+
+.imgContainerGral{
+display: flex;
+flex-direction: column;
 }
 
 .previewMainPortal{
@@ -57,17 +90,37 @@
     width: 4rem;
     height: 4rem;
 }
+.previewPhoto1Portal.active{
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    border: 3px solid var(--Orange);
+    border-radius: 10px;
+    filter: opacity(40%);
+}
 
-.previewPhoto1Portal img{
+.previewPhoto1Portal  img{
     width: 100%;
     height: 100%;
     border-radius: 10px;
+}
+
+.previewPhoto1Portal img:hover{
+    filter: opacity(40%);
 }
 
 .previewPhoto2Portal{
     cursor: pointer;
     width: 4rem;
     height: 4rem;
+}
+.previewPhoto2Portal.active{
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    border: 3px solid var(--Orange);
+    border-radius: 10px;
+    filter: opacity(40%);
 }
 
 .previewPhoto2Portal img{
@@ -76,10 +129,21 @@
     border-radius: 10px;
 }
 
+.previewPhoto2Portal img:hover{
+    filter: opacity(40%);
+}
 .previewPhoto3Portal{
     cursor: pointer;
     width: 4rem;
     height: 4rem;
+}
+.previewPhoto3Portal.active{
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    border: 3px solid var(--Orange);
+    border-radius: 10px;
+    filter: opacity(40%);
 }
 
 .previewPhoto3Portal img{
@@ -87,15 +151,30 @@
     height: 100%;
     border-radius: 10px;
 }
+.previewPhoto3Portal img:hover{
+    filter: opacity(40%);
+}
 
 .previewPhoto4Portal{
     cursor: pointer;
     width: 4rem;
     height: 4rem;
 }
+.previewPhoto4Portal.active{
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    border: 3px solid var(--Orange);
+    border-radius: 10px;
+    filter: opacity(40%);
+}
 
 .previewPhoto4Portal img{
     width: 100%;
     height: 100%;
     border-radius: 10px;
+}
+
+.previewPhoto4Portal img:hover{
+    filter: opacity(40%);
 }
