@@ -20,14 +20,14 @@ const Portal = ({ setPortal }) => {
       <div className="portalContainer">
         <div className="containerImgPortal">
           <div className="galeryContainerPortal">
-          <div
-            className="close"
-            onClick={() => {
-              setPortal(false);
-            }}
-          >
-            <img src={Close} alt="" />
-          </div>
+            <div
+              className="close"
+              onClick={() => {
+                setPortal(false);
+              }}
+            >
+              <img src={Close} alt="" />
+            </div>
             <button className="prevBtn">
               <img src={Prev} alt="" />
             </button>

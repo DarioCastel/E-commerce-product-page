@@ -18,16 +18,18 @@
   color: var(--Orange);
   position: absolute;
   right: 10rem;
-  top: 6rem;
+  top: 0;
+  right: 0;
 }
 
 .galeryContainerPortal {
   display: flex;
-  width: 50vw;
+  width: 31vw;
   height: 80vh;
   gap: 2rem;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .prevBtn {
@@ -37,9 +39,9 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  position: relative;
-  right: -3rem;
-  top: -2rem;
+  position: absolute;
+  left: 0;
+  top: 35%;
 }
 .prevBtn img:hover {
   color: var(--Orange);
@@ -52,9 +54,9 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  position: relative;
-  left: -3rem;
-  top: -2rem;
+  position: absolute;
+  right: 0;
+  top: 35%;
 }
 
 .imgContainerGral {
@@ -65,7 +67,6 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  background-color: yellow;
 }
 
 .previewMainPortal {
@@ -74,7 +75,6 @@
   justify-content: center;
   width: 27rem;
   height: 27rem;
-  cursor: pointer;
 }
 
 .previewMainPortal img {
